@@ -1,0 +1,233 @@
+nav {
+	font-family: mason-chronicle, serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+nav .dropdown-menu {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f8f7), to(#dbe3df));
+	background: -webkit-linear-gradient(top, #f6f8f7, #dbe3df);
+	background: -o-linear-gradient(top, #f6f8f7, #dbe3df);
+	background: linear-gradient(180deg, #f6f8f7, #dbe3df);
+	padding-left: 0;
+	padding-right: 0; }
+nav .dropdown-item {
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid rgba(192, 192, 192, 0.2); }
+nav .dropdown-item:last-child {
+	border-bottom: none; }
+nav li a {
+	text-transform: uppercase; }
+
+.sticky-nav{
+	transition: all .3s !important;
+}
+.fixed-top .navbar-brand {
+	display: inline-block !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: mason-chronicle, serif; }
+
+a {
+	color: #6c757d;
+}
+a:hover {
+	color: #545b62;
+}
+
+.logo {
+	width: 200px; }
+
+.header {
+	text-transform: uppercase;
+	font-family: mason-chronicle, serif; }
+
+.bg-custom {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f8f7), to(#dbe3df));
+	background: -webkit-linear-gradient(top, #f6f8f7, #dbe3df);
+	background: -o-linear-gradient(top, #f6f8f7, #dbe3df);
+	background: linear-gradient(180deg, #f6f8f7, #dbe3df); }
+
+.bg-x-custom {
+	background: -webkit-gradient(linear, left top, right top, from(#f6f8f7), to(#dbe3df));
+	background: -webkit-linear-gradient(left, #f6f8f7, #dbe3df);
+	background: -o-linear-gradient(left, #f6f8f7, #dbe3df);
+	background: linear-gradient(90deg, #f6f8f7, #dbe3df); }
+
+main {
+	/*position: relative;*/
+	/*min-height: 50vh;*/
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0.1rem;
+	padding-bottom: 3rem;
+}
+main .container > .row {
+	margin-top: 2rem; }
+
+.card {
+	overflow: hidden;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 24rem;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 2, 0.23);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 2, 0.23); }
+.card > img {
+	position: absolute;
+	top: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+.card > img.wide {
+	/*width: 100%;*/
+	background-color: #000000; }
+.card .card-img-overlay {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(40%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.75)));
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.75));
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.75));
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.75)); }
+.card .card-img-overlay .card-body {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	max-height: 12rem;
+	padding-top: 0; }
+.card .card-img-overlay .card-body .btn {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center; }
+.card .card-img-overlay .card-body p {
+	height: 4.5rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical; }
+.card .card-img-overlay .card-body h4 {
+	text-transform: uppercase;
+	font-family: mason-chronicle;
+	font-weight: 500; }
+
+.carousel {
+	border-radius: 0.25rem;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 2, 0.23);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 2, 0.23);  }
+.carousel-item { /*ограничение высоты убрать есил регулируется самими картинками*/
+	max-height: 24rem;
+	border-radius: 0.25rem;
+	overflow: hidden;
+}
+
+
+
+
+.table span {
+	font-weight: bold; }
+
+.table th {
+	padding-right: 1rem;
+	text-align: right; }
+
+.table a {
+	color: #343a40; }
+.table a:hover {
+	text-decoration: underline; }
+
+/*
+.img-bloc {
+	overflow: hidden;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center; }
+.img-bloc h3 {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	color: white; }
+.img-bloc > img {
+	width: 100%; }*/
+
+footer {
+	width: 100%;
+	margin-bottom: 0;
+	min-height: 50px;
+	content: '';
+	background: rgba(0, 0, 0, 0.1); }
+
+header a {
+	color: #343a40; }
+header a:hover {
+	color: #343a40; }
+/*
+.author {
+	margin-right: 5rem; }*/
+
+@media only screen and (max-width: 388px) {
+	.display-4, h1 {
+		font-size: 3rem; } }
+	* {
+		word-wrap: break-word;
+	}
+
+@media only screen and (max-width: 321px) {
+	.display-4, h1 {
+		font-size: 2.2rem; } }
+
+/*
+@media only screen and (max-width: 1199px) {
+	.inbloc-1 .img-bloc {
+		height: 86%; } }
+
+@media only screen and (max-width: 768px) {
+	.inbloc-1 .img-bloc {
+		height: 100%; } }*/

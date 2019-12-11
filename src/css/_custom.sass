@@ -1,0 +1,349 @@
+//main menu
+.main-top-menu
+  background: rgba($white, 1)
+.navbar-toggler
+  border: 1px solid rgba(90, 173, 221, 0.5)
+  &-icon
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(90, 173, 221, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+.main-top-menu.nav-fixed-top
+  position: fixed
+  top: 0
+  width: 100%
+  background: rgba($white, 0.6)
+  animation-name: fadeInDown
+  animation-duration: 1300ms
+  transition: all .5s
+  z-index: 9000
+  .navbar-brand
+    display: none
+  &:hover
+    background: rgba($white, 1)
+.navbar-brand
+  font-size: 1.15rem
+  img
+    max-height: 1em
+    max-width: 1em
+    object-fit: contain
+
+//main menu end
+//carusel
+
+.carousel-img
+  width: 100%
+  height: 100%
+  min-height: 65vh
+  min-width: 100%
+.carousel-caption
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10
+  padding-left: 11%
+  padding-right: 11%
+  padding-top: 20px
+  padding-bottom: 46px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: self-start
+  background: rgba(#000, 0.35)
+.carousel-title
+  font-size: 1.25rem
+//carusel end
+//header
+.blog-title__main-page
+  position: absolute
+  top: 0
+  left: 11%
+  right: 11%
+  padding: 15px 0
+  //z-index: 1
+  h1.h1
+    font-size: 1.6rem
+    margin-bottom: 15px
+    color: $primary
+  h2.h2
+    font-size: 1rem
+    color: $white
+
+.carouselMainPage
+  .carousel-item
+    max-height: 65vh
+    min-height: 65vh
+    overflow: hidden
+  .carousel-img
+    height: 100%
+    object-fit: cover
+  .carousel-caption
+    text-align: left
+//header end
+
+// benefits
+.benefits
+  //margin-top: 48px
+  &__item
+    width: 100%
+    height: 100%
+    border: 3px solid #eeeeee
+    padding: 30px
+    text-align: center
+  //&__ico
+  &__img
+    max-height: 120px
+    transition: all .7s ease-in-out
+  &__item:hover &__img
+    transform: rotateY(360deg)
+  &__title
+    position: relative
+    margin: 20px 0 10px
+    min-height: 82px
+    padding-bottom: 18px
+    font-size: 1.1rem !important
+    text-transform: uppercase
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      display: block
+      width: 35%
+      height: 2px
+      transform: translateX(-50%)
+      border-bottom: 2px solid rgba(90, 173, 221, 0.7)
+  &__text
+    margin: 0
+    font-size: 14px
+// benefits end
+//main-page
+#main_page .img-fluid
+  min-height: 100%
+  object-fit: cover
+//main-page end
+// tours card
+.row>.cardholder
+  height: 500px
+.tour-card
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  border-radius: $border-radius
+  background: rgba(#000, 0.3)
+  &:hover &__img
+    transform: scale(1.05)
+  &__img
+    position: absolute
+    object-fit: cover
+    object-position: center
+    height: 100%
+    width: 100%
+    z-index: -1
+    transition: all 0.3s ease-in-out
+    transform: scale(1)
+
+  &__overlay
+    position: absolute
+    bottom: 0
+    left: 0
+    //right: 0
+    padding: 24px
+    //text-align: right
+
+  &__title
+    color: $primary
+  &__text
+    min-height: 5em
+    max-height: 5em
+  &__price
+    padding: 0.5rem
+    background: $accent
+
+// tours end
+// price table
+.price-list
+  background: linear-gradient(rgba(#FFF, 0.75), rgba(#FFF, 0.95)), url('img/price-list-cover.jpg') top center / cover no-repeat
+  &__table
+    text-align: center
+    tr td
+      border-color: $gray-400
+    tr td:not(:first-child)
+      border-left: 1px solid $gray-400
+    tr th:first-child,
+    tr td:first-child,
+    tr th:last-child,
+    tr td:last-child
+      text-align: left
+
+  & &__thead
+    background: rgba(#fff, 0.5)
+    th
+      color: $primary
+      border-top-color: $primary
+      border-bottom-color: $primary
+      vertical-align: middle
+  & tr th:last-child,
+  & tr td:last-child
+      display: none
+.price_tab_title
+  flex: 1 1 50%
+  color: $primary
+  &.active
+    order: 1
+.price-list .nav-tabs
+  flex-direction: column
+
+// price table end
+// directions
+.direction-card
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  border-radius: $border-radius
+  background: rgba(#fff, 0.3)
+  background: linear-gradient(to bottom,rgba(#fff, 0.1), rgba(#fff, 0.4) 30%, rgba(#fff, 0.8) )
+  transition: all 0.4s ease-in-out
+  &:hover
+    background: transparent
+  &:hover  &__img
+      transform: scale(1.05)
+  &:hover  &__overlay>*:not(.btn):not(.direction-card__title)
+    opacity: 0
+    transform: scaleY(0.2)
+  &__img
+    position: absolute
+    object-fit: cover
+    object-position: center
+    height: 100%
+    width: 100%
+    z-index: -1
+    transition: all 0.4s ease-in-out
+    transform: scale(1)
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 24px
+    &>*
+      opacity: 1
+      transition: all 0.4s ease-in-out
+  &__title
+    color: $primary
+    margin-bottom: auto
+  &__text
+    color: #000
+    text-shadow: -0   -1px 1px $Shadow-White, 0 -1px 1px $Shadow-White, -0    1px 1px $Shadow-White,   0    1px 1px $Shadow-White, -1px -0   1px $Shadow-White,   1px -0   1px $Shadow-White, -1px  0   1px $Shadow-White,   1px  0   1px $Shadow-White, -1px -1px 1px $Shadow-White,   1px -1px 1px $Shadow-White, -1px  1px 1px $Shadow-White,   1px  1px 1px $Shadow-White, -1px -1px 1px $Shadow-White,   1px -1px 1px $Shadow-White, -1px  1px 1px $Shadow-White,   1px  1px 1px $Shadow-White
+  &__price
+    padding: 0.5rem
+    background: $accent
+    align-self: flex-end
+// directions end
+// scrolling numbers
+.numbers
+  text-align: center
+  background: linear-gradient(rgba(#000, 0.35), rgba(#000, 0.55)), url("img/numbers-bg.png") fixed no-repeat top center / cover
+  &__num-item
+    display: inline-block
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: $primary
+    line-height: 100px
+    font-weight: 700
+    color: $white
+    margin-bottom: 1rem !important
+  &__title
+    color: $white
+
+// scrolling numbers end
+//cars
+.cars
+  &__photo
+    border-radius: $border-radius
+  &__details
+    display: flex
+    align-items: flex-end
+    margin-top: 1rem
+    margin-bottom: 2rem
+  &__ico
+    margin-right: 0.7rem
+    &--text
+      font-size: 18px
+      line-height: 1
+      margin-right: 1.2em
+//cars end
+
+//==========================================FOTER=================================================
+//footer
+.footer
+  position: relative
+  padding-bottom: 0.1px
+  &__box
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1rem
+  &__text
+    padding-bottom: 0.7rem
+    text-align: center
+  &__email-value,
+  &__phone-value
+    font-size: 18px
+  .socials.socials_nets
+    position: static
+    margin-bottom: 56px
+//footer end
+//social-bar
+.socials
+  position: fixed
+  right: 0px
+  bottom: 0px
+  width: 100%
+  padding: 0.5rem 0.7rem
+  background: $white
+  &__call
+    padding-top: 0
+    text-align: center
+    white-space: nowrap
+  &__list
+    display: flex
+    justify-content: space-around
+  &__item
+    border-radius: 50%
+//social-bar end
+//modal form
+.modal-header
+  padding: 32px 32px 16px
+.modal-body
+  padding: 32px
+.feedback__btn-box
+  display: flex
+  flex-direction: row-reverse
+  justify-content: flex-start
+//modal form end
+
+.cont_404
+  min-height: calc(100vh - 266px)
+
+.blocks-gallery-item figure figcaption
+  opacity: 0
+  transition: all .5s
+
+.blocks-gallery-item figure
+  transition: all .5s
+
+.blocks-gallery-item:hover
+  figure img
+    box-shadow: inset 0 30px 0 rgba($black, 0.9)
+  figcaption
+    opacity: 1
+    background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.7) 70%,transparent)
+
+

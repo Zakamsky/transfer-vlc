@@ -1,0 +1,32 @@
+/*
+Theme Name: Fix-it
+Theme URI:
+Author: Alex Elkin
+Author URI:
+Description: landingpage on wordpress
+Version: 1.0b
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: Fix-it
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+div.carousel-caption {
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 1),2px 2px 16px rgba(0, 0, 0, 1);
+	/*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+.form-inline input {
+	margin-right: 0.5rem;
+}
+
+.wpcf7-response-output {
+	margin: 2em 0em 1em !important;
+	border: 1px solid #6610f2 !important;
+	border-radius: .25rem;
+	color: #6610f2;
+
+}

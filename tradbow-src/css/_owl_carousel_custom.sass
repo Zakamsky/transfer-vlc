@@ -1,0 +1,45 @@
+$slider-height: 60vh
+//@extend %foo
+%shadow
+  text-shadow: 0 0 0.2rem $main-color-dark, 0 0 0.3rem $main-color-dark, 0 0 0.4rem $main-color-dark
+#main-slider
+  position: relative
+  .slide
+    display: flex
+    flex-direction: column
+    //justify-content: center
+    align-items: center
+    position: relative
+    height: 60vh
+    overflow: hidden
+    //border: 1px solid teal
+    &--image
+      position: absolute
+      border-radius: $border-radius
+      top: 0
+      left: 0
+      height: 100%
+      object-fit: cover
+      z-index: -5
+    &--title
+      display: block
+      color: $bg-color
+      font-size: 3.706325903em
+      margin-top: $slider-height / 4
+      margin-bottom: .2360828548em
+      @extend %shadow
+
+    &--content
+      display: block
+      color: $bg-color !important
+      margin-bottom: 1em
+      padding: 0 1em
+      text-align: center
+      @extend %shadow
+
+      h1,h2,h3,h4,h5,h6
+        color: inherit
+
+    &--button
+      margin-top: auto
+      margin-bottom: 2rem

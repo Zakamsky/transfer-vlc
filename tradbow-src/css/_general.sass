@@ -1,0 +1,151 @@
+body
+  //position: relative
+  color: $text-brown
+  //background: url("img/papel_1.jpg") repeat left bottom /auto
+
+//.background-fill  /* creo que es bg para tiempovegano
+//  position: absolute
+//  top: 0
+//
+//  min-width: 100%
+//  min-height: 100%
+//  z-index: -100
+
+.site-header
+  padding: 0
+  background-color: transparent
+
+.site-footer
+  background-color: rgba($text-brown, 0.6)
+
+.site-header .site-branding
+  padding-top: 2rem //!important
+  padding-bottom: 2rem //!important
+
+.brand-title
+  //display: none
+
+
+.hfeed
+  //background: url("img/papel_1.jpg") repeat left bottom /auto
+  //background: rgba(255,255,255, 0.6)
+  //background: rgba($bg-color, 0.0)
+
+
+.site-content>.col-full
+  background: rgba(255,255,255, 0.6)
+
+#primary, #secondary
+  padding-top: 2em
+
+.storefront-breadcrumb
+  padding: 0
+  margin-bottom: 2em
+
+.storefront-breadcrumb>.col-full
+  //background: rgba(255,255,255, 0.6)
+  padding-top: 1.41575em
+  padding-bottom: 1.41575em
+
+
+.site-header .site-branding
+  display: flex
+  align-items: flex-end
+
+  img
+    object-position: center center
+
+  .brand-title
+    margin-left: 4em
+
+
+//.brand-watch
+//  position: relative
+  //.clock
+  //  //position: relative
+  //  z-index: -5
+  //  .clock__hand
+  //    //position: relative
+  //    z-index: 150
+
+.entry-title
+  @extend %wood-title
+  a
+    @extend %wood-title
+    transition: all .3s
+    &:hover
+      opacity: 0.7
+    &:visited
+      opacity: 0.8
+    &:focus, &:active
+      opacity: 0.9
+      //outline-color: transparent
+
+.site-branding
+  .site-title
+    margin-bottom: 1rem
+    a
+      @extend %wood-title
+      //color: $main-color
+      //text-shadow: 2px 2px 4px rgba($main-color-dark, 0.5)
+      transition: all .3s
+      &:hover
+        opacity: 0.8
+      &:focus,
+      &:active
+        opacity: 0.9
+        outline-color: transparent
+        //outline: none !important
+
+.section-title
+  @extend %wood-title
+
+p.site-description
+  color: $main-color-dark
+
+.main-slider
+  margin-top: -32px
+
+.main-navigation .primary-navigation
+  li.menu-item
+    a
+      color: $main-color-dark
+      text-shadow: 2px 2px 4px rgba($main-color-dark, 0.4)
+      transition: all .3s
+    &>a:hover, &.current-menu-item>a
+      color: rgba($main-color-dark, 0.6)
+      text-shadow: 3px 4px 4px rgba($main-color-dark, 0.3)
+      transform: translateY(-1px)
+//.storefront-primary-navigation
+//  transition: all .3s
+.fixed-top
+  position: fixed
+  top: 0
+  width: 100%
+  background: rgba($bg-color-light, 0.9)
+  animation-name: movingBox
+  animation-duration: 1300ms
+
+//.header .site-search
+//  display: none !important
+
+//#header-widget-area
+//  display: none
+a.button.button-outline-light
+  border: 2px solid $bg-color
+  color: $bg-color
+  background: transparent
+  &:hover
+    color: $main-color-dark
+    background: $bg-color
+
+
+@keyframes movingBox
+  0%
+    transform: translateY(-100%)
+    opacity: 0
+
+  100%
+    transform: translateY(0%)
+    opacity: 1
+

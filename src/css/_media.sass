@@ -1,0 +1,150 @@
+//@import "vars"
+
+/*==========  Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	.navbar-brand
+		font-size: 1.25rem
+		img
+			max-height: unset
+			max-width: unset
+
+	.carousel-caption
+		padding-left: 13%
+		padding-right: 13%
+	.carousel-title
+		font-size: 1.55rem
+	.blog-title__main-page
+		left: 13%
+		right: 13%
+		padding: 25px 0
+		h1.h1
+			margin-bottom: 20px
+			font-size: 2rem
+		h2.h2
+			font-size: 1.6rem
+	.price_tab_title.active
+			order: unset
+	.price-list .nav-tabs
+		flex-direction: row
+
+	.socials
+		width: 310px
+		right: 3px
+		bottom: 3px
+		padding: 0.7rem
+		border-radius: $border-radius $border-radius 0 $border-radius
+		box-shadow: 2px 2px 6px 4px rgba($gray-400, 0.4)
+		&__img
+			transition: all .3s
+		&__list:hover .socials__img
+			filter: saturate(0.1)
+		&__list .socials__img:hover
+			//filter: saturate(1)
+			filter: unset
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			right: 0
+			transform: translateX(99%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 3px 0 0 3px
+			border-color: transparent transparent transparent $white
+		.footer &.socials_nets
+			position: absolute
+			width: 180px
+			margin-bottom: 0 //!important
+			bottom: 3px
+			left: 3px
+			border-radius: $border-radius $border-radius $border-radius 0
+			&:after
+				bottom: 0
+				left: 0
+				right: unset
+				transform: translateX(-99%)
+				border-width: 3px 3px 0 0
+				border-color: transparent $white transparent transparent
+
+
+	.footer
+		&__box
+			//padding: 1rem
+			flex-direction: row-reverse
+			justify-content: space-between
+		&__text
+			text-align: left
+		&__copyright
+			height: 88px
+			&--text
+				display: inline-block
+
+// ≤768px
++media-breakpoint-up(md)
+	.carousel-caption
+		padding-left: 15%
+		padding-right: 15%
+	.carousel-title
+		font-size: 1.75rem
+	.blog-title__main-page
+		left: 15%
+		right: 15%
+		padding: 45px 0
+		h1.h1
+			margin-bottom: 20px
+			font-size: 2.5rem
+		h2.h2
+			font-size: 2rem
+
+	.price-list
+		&__table
+			tr,
+			th
+				padding-left: 1.5rem
+				padding-right: 1.5rem
+			tr th:last-child,
+			tr td:last-child
+				display: table-cell
+	.footer__copyright--text
+		display: block
+// ≤992px
++media-breakpoint-up(lg)
+	.main-top-menu.nav-fixed-top
+		.navbar-brand
+			display: block
+
+	.socials
+		right: 5px
+		bottom: 5px
+		&:after
+			border-width: 5px 0 0 5px
+		.footer &.socials_nets
+			position: absolute
+			margin-bottom: 0 //!important
+			bottom: 5px
+			left: 5px
+
+// ≤1200px
++media-breakpoint-up(xl)
+	.blog-title__main-page .h1
+		font-size: 3.5rem
+		font-weight: 300
+		line-height: 1.2
+

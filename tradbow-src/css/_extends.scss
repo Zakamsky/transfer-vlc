@@ -1,0 +1,18 @@
+//@extend %foo
+
+%wood-title {
+  color: transparent; /*this hide the text*/
+  font-weight: 600;
+  text-shadow:
+      /*this is the real color of the text - just blurred*/
+      0 0.0066em 0.033em rgba($main-color, 1),
+      /* these are the dark inset shadows the second one add a sharper look and depth to the top of the letters */
+      -0.0066em -0.0066em 0 rgba(darken($main-color, 30),1),
+      0 -0.0133em 0 rgba(darken($main-color, 30),0.45),
+      /* these are the highlights - using rgba you can change the last value if they are too (or too little) bright */
+      0 0.0066em 0 rgba($bg-color-light, 0.5),
+      0 0.0133em 0.0133em rgba($bg-color-light, 0.2);
+
+}
+
+

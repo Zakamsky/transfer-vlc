@@ -1,0 +1,60 @@
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+html
+  overflow-x: hidden
+body
+  font-size: 16px
+  min-width: 320px
+  min-height: 100vh
+  //position: relative
+  line-height: 1.65
+  font-family: roboto, $default-font
+  overflow-x: hidden
+  //color: #042007
+  input, textarea
+    border: #666 1px solid
+    outline: none
+    &:focus:required:invalid
+      border-color: orangered
+    &:required:valid
+      border-color: teal
+
+h3, h2, h1, .h3, .h2, .h1
+  margin-bottom: 1rem
+
+b, strong
+  font-weight: bold
+
+section
+  padding-top: 70px
+  padding-bottom: 60px
+
+h3.h1
+  margin-bottom: 1.2em
+
+.cardholder .tour-card,
+.cardholder .direction-card
+  box-shadow: 1px 2px 3px 1px $gray-500
+
+.bright-title
+  text-shadow: -0   -1px 1px $Shadow-White, 0 -1px 1px $Shadow-White, -0    1px 1px $Shadow-White,   0    1px 1px $Shadow-White, -1px -0   1px $Shadow-White,   1px -0   1px $Shadow-White, -1px  0   1px $Shadow-White,   1px  0   1px $Shadow-White, -1px -1px 1px $Shadow-White,   1px -1px 1px $Shadow-White, -1px  1px 1px $Shadow-White,   1px  1px 1px $Shadow-White, -1px -1px 1px $Shadow-White,   1px -1px 1px $Shadow-White, -1px  1px 1px $Shadow-White,   1px  1px 1px $Shadow-White
+
+.h1.bright-title
+  position: relative
+  z-index: 1
+  text-shadow: none
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: -3%
+    height: 105%
+    width: 106%
+    background: linear-gradient(to right, $table-hover-bg, rgba($white, .6) 85%, transparent)
+    //background: rgba($white, .6)
+    z-index: -1

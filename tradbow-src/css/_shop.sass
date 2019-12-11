@@ -1,0 +1,237 @@
+/* start navigations */
+
+//.storefront-primary-navigation
+//  box-shadow: -6px -6px 2px 6px red //rgba($main-color-dark, 0.6)
+
+.storefront-primary-navigation,
+.products .product, .product-category
+  box-shadow: 2px 2px 8px rgba($main-color-dark, 0.6)
+
+.storefront-handheld-footer-bar,
+.storefront-handheld-footer-bar ul li > a,
+button.menu-toggle, button.menu-toggle:hover
+  color: inherit
+  border: none
+  background: $bg-color-light
+
+button.menu-toggle
+  margin: 3px 0
+  border-radius: $border-radius-lg
+  box-shadow: 1px 1px 4px rgba($main-color-dark, 0.4)
+  &:focus
+    outline: none
+    box-shadow: 1px 1px 2px rgba($main-color-dark, 0.6)
+/* end navigations */
+
+/* start products */
+ul.products
+  li.product, li.product.product-category
+    overflow: hidden
+    padding: 0
+    //.woocommerce-LoopProduct-link
+    //  display: block
+    //  position: relative
+
+
+    img
+      //position: absolute
+      //top: 0
+      object-fit: cover
+      margin: 0
+      transform: scale(1)
+      transition: all 0.6s
+
+
+    &:hover img
+      transform: scale(1.05)
+  li.product.product-category
+    a
+      display: block
+      &:before, &:after
+        box-sizing: border-box
+        display: block
+        content: ''
+        position: absolute
+        width: 100%
+        height: 4em
+        background: linear-gradient($text-brown, transparent)
+      &:before
+        top: 0
+        content: 'Категория:'
+        padding-top: 1em
+        padding-left: 2em
+        text-align: left
+        color: $bg-color
+        z-index: 5
+      &:after
+        bottom: 0
+        background: linear-gradient(transparent, $text-brown)
+    h2.woocommerce-loop-category__title
+      position: absolute
+      bottom: 1em
+      right: 2em
+      margin: 0
+      padding: 0
+      color: $bg-color
+      z-index: 5
+      mark
+        color: darken($bg-color, 10)
+
+  li.product
+    position: relative
+    display: flex
+    justify-content: center
+    padding-bottom: 1em
+    border-radius: $border-radius-lg
+    height: 320px
+    .woocommerce-LoopProduct-link
+      //display: block
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      min-height: 300px
+      max-height: 320px
+      //z-index: -1
+      .woocommerce-loop-product__title
+        z-index: 1
+        color: $bg-color
+        text-shadow: 0 0 0.2em $main-color-dark, 0 0 0.3em $main-color-dark, 0 0 0.4em $main-color-dark
+      .price
+        margin-bottom: 5em
+        z-index: 20
+        color: $bg-color
+        text-shadow: 0 0 0.2em $main-color-dark, 0 0 0.3em $main-color-dark, 0 0 0.4em $main-color-dark
+        del
+          //color: $main-color-light
+          opacity: 0.6
+
+    .attachment-woocommerce_thumbnail
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      object-fit: cover
+      object-position: center
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+      //z-index: -1
+
+
+    .button, .added_to_cart.wc-forward
+      margin-top: auto
+      margin-bottom: 0
+      z-index: 1
+    .added_to_cart.wc-forward
+      margin-left: -5px
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+      padding-left: 0.3em
+      &:after
+        line-height: 1.5
+    .button.added, .added_to_cart.wc-forward
+      //padding-left: 0.5em
+      padding-right: 0.5em
+    .button.added
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+      padding-left: 0.5em
+
+    .button
+
+      color: $bg-color
+      background-color: $main-color
+      border-color: $main-color
+      &:hover
+        background-color: lighten($main-color, 6)
+        border-color: lighten($main-color, 6)
+      &:active
+        background-color: darken($main-color, 6)
+        border-color: darken($main-color, 6)
+
+  //.product-category
+
+
+  .woocommerce-LoopProduct-link
+
+    .onsale
+      position: absolute
+      top: 1.8em
+      left: 1em
+      font-size: 1.2em
+      font-weight: 700
+      background-color: rgba($bg-color, 0.2)
+      transform: rotate(-15deg)
+.onsale
+  font-size: 1em
+  color: $main-color-contrast
+  border: 2px solid $main-color-contrast
+  border-radius: $border-radius-lg
+
+.woocommerce-Price-amount
+  font-size: large
+  //color: $main-color-dark
+
+input
+  border-radius: $border-radius
+
+.button, .added_to_cart.alt, .added_to_cart, .widget a.button.checkout
+  border-radius: $border-radius-lg
+
+.added_to_cart,
+.site-header-cart .widget_shopping_cart a.button,
+button.button,
+.button
+  background: rgba($main-color, 0.4)
+  &:hover
+    background: lighten(rgba($main-color, 0.4), 5)
+  &:active
+    background: darken(rgba($main-color, 0.4), 5)
+
+
+
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt
+  //background: $main-color-halfdark
+  background: $main-color
+.added_to_cart.alt:hover, .added_to_cart.cta:hover,
+.button.alt:hover, .button.cta:hover, button.alt:hover,
+button.cta:hover, input[type=button].alt:hover,
+input[type=button].cta:hover, input[type=reset].alt:hover,
+input[type=reset].cta:hover, input[type=submit].alt:hover,
+input[type=submit].cta:hover
+  //background: lighten($main-color-halfdark, 5)
+  background: lighten($main-color, 5)
+
+.added_to_cart.alt:active, .added_to_cart.cta:active,
+.button.alt:active, .button.cta:active, button.alt:active,
+button.cta:active, input[type=button].alt:active,
+input[type=button].cta:active, input[type=reset].alt:active,
+input[type=reset].cta:active, input[type=submit].alt:active,
+input[type=submit].cta:active
+  //background: darken($main-color-halfdark, 5)
+  background: darken($main-color, 5)
+
+.added_to_cart.alt, .added_to_cart, .widget a.button.checkout
+  //background: $main-color-dark
+  background: $main-color-halfdark
+
+.added_to_cart.alt:hover, .added_to_cart:hover, .widget a.button.checkout:hover
+  //background: lighten($main-color-dark, 5)
+  background: lighten($main-color-halfdark, 5)
+.added_to_cart.alt:active, .added_to_cart:active, .widget a.button.checkout:active
+  //background: darken($main-color-dark, 2)
+  background: darken($main-color-halfdark, 2)
+
+
+a:focus,
+.button:focus,
+.button.alt:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus
+  outline: dotted 0.5px

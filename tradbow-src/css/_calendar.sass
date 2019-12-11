@@ -1,0 +1,56 @@
+.chw-widget-area
+  margin: 0
+  .mec-widget
+    //max-height: 200px
+  .mec-calendar
+    margin: 0
+
+
+  .mec-search-form
+    display: none
+  .mec-calendar-table
+    position: relative
+  .mec-calendar .mec-calendar-events-sec
+    position: absolute
+    top: 0
+    right: 50%
+    width: 100%
+    z-index: 2
+    visibility: hidden
+    opacity: 0
+    box-shadow: 1px 1px 4px rgba($main-color-dark, 0.4)
+    transition: all 0.6s
+  .mec-month-container
+    &:hover .mec-calendar-events-sec,
+    & .mec-calendar-events-sec:hover
+      visibility: visible
+      opacity: 1
+      right: 99%
+
+
+  .mec-calendar-day-head
+    font-size: 10px !important
+  .mec-calendar-day
+    font-size: 13px
+  .mec-table-nullday
+    font-size: 13px
+
+  .mec-widget .mec-calendar dl dt, .mec-wrap.mec-sm959.mec-widget .mec-calendar.mec-event-calendar-classic dl dt
+    height: 27px
+  .mec-calendar.mec-event-calendar-classic .mec-calendar-table-head dt
+    height: 25px !important
+
+.mec-calendar .mec-has-event.mec-selected-day
+  background: $main-color
+
+  a
+    color: $bg-color-white !important
+
+.mec-calendar .mec-has-event
+  background: rgba($main-color, 0.4)
+  &:after
+    display: none
+  a
+
+    text-decoration: underline
+
