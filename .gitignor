@@ -1,0 +1,21 @@
+.idea
+.idea/*.**
+fix-it
+fix-it/*.**
+fixiki-base-project
+fixiki-base-project/*.**
+node_modules
+node_modules/*.**
+ohs_theme
+ohs_theme/*.**
+texts and picture
+texts and picture/*.**
+/texts and picture/*.**
+tradbow-src
+tradbow-src/*.**
+twentyfifteen
+twentynineteen
+twentyseventeen
+twentysixteen
+package-lock.json
+trasnsfer-vlc.zip
