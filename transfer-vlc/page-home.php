@@ -500,6 +500,7 @@
             <a class="ml-auto text-primary" href="/otzyvy">Смотреть все</a>
         </div>
     </div>
-<!--    <a href="/otzyvy">Смотреть все</a>-->
+
+
 </section>
 <?php get_footer(); ?>

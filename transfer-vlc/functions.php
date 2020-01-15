@@ -14,8 +14,6 @@ define('TVLC_IMG_DIR', TVLC_THEME_ROOT . '/img');
 
 
 //подключаем автоматический метатайтл для всех страниц
-//    $sep = apply_filters( 'document_title_separator', ':' );
-
 
 add_filter( 'document_title_separator', 'cyb_document_title_separator' );
 function cyb_document_title_separator( $sep ) {
